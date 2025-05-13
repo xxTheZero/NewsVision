@@ -1,0 +1,10 @@
+Author
+Caption
+Content
+Content2
+Image
+Miscellaneous
+Subheader
+Summary
+Title
+Title2
