@@ -5,13 +5,14 @@
 
 ## Overview
 
-NewsVision is a Python-based image analysis tool designed to process and extract information from news article images. It uses Optical Character Recognition (OCR) to identify and analyze text regions in images. The project supports multiple OCR engines, including optional integration with Tesseract OCR.
+NewsVision is a layout parser designed to improve OCR accuracy on newspaper clippings by segmenting complex layouts into distinct components such as headlines, body text, images, and captions. The system uses object detection techniques to analyze and structure newspaper pages before passing them to an OCR engine. This modular approach allows for better reconstruction of original article flow and supports multiple languages.
 
 ## Features
 
 - Image input processing for news articles  
 - Text detection and extraction using OCR  
-- Optional Tesseract OCR integration  
+- Custom-trained layout model
+- Modular OCR integration
 - Debug mode to visualize bounding boxes  
 - Sample outputs provided in the Output directory
 
@@ -60,3 +61,9 @@ debug_mode = True
 ### Sample Output
 
 Example processed images and OCR results can be found in the `Output/` directory.
+
+## Training Custom Model
+
+1. Training was done using the tools provided by [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection/tree/release/2.8)
+
+2. Please follow the instructions provided by PaddleDetection to train your custom model.
